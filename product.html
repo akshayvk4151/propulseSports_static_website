@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Felipa&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="/productstyle.css">
+    <title>Product Page</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparant fixed-top" id="navbar"
+        style="background-color: cadetblue;">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fs-4" href="#" style="font-weight: 600; color: yellow; font-family: 'Felipa', cursive;">ProPulse
+                <span style="color: rgb(228, 17, 17); font-family: none;">Sports</span> </a>
+            <!-- Toggle Btn -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- side bar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <!-- Sidebar Header -->
+                <div class="offcanvas-header text-white border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ProPulse Sports</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                    <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/aboutus.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+
+
+                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                        <form class="d-flex ms-lg-auto mb-2 mb-lg-0">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                                style="border-color: #ddd; color: black;">
+                            <button class="btn btn-outline-light" type="submit">Search</button>
+                        </form>
+                        <div class="navicons">
+                            <a href=""><i class="bi bi-person" style="font-size: 1.8rem; color: white;"></i></a>
+                            <a href=""><i class="bi bi-cart" style="font-size: 1.8rem; color: white;"></i></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content mt-3">
+        <section class=" fs-1">
+            <h1 style="font-size: 1em;font-weight: bold;">Our <span style="color: cadetblue;">Products</span> </h1>
+
+            <p class="mb-1" style="font-size: 15px;font-weight: 500;">Consequatur libero assumenda est voluptatem
+                est quidem illum et officia imilique qui vel
+                architecto </p>
+            <p style="font-size: 15px;font-weight: 500;">accusamus fugit aut
+                qui distinctio</p>
+        </section>
+    </main>
+
+    <section class="filter">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-12 ">
+                    <div class="filter-link text-center d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#" class="text-decoration-none mx-2" onclick="filterProducts('all')">All</a>
+                        <a href="#" class="text-decoration-none mx-2" onclick="filterProducts('hiking')">Hiking
+                            Boots</a>
+                        <a href="#" class="text-decoration-none mx-2" onclick="filterProducts('camping')">Tent</a>
+                        <a href="#" class="text-decoration-none mx-2" onclick="filterProducts('waterSports')">Water
+                            Sports</a>
+                        <a href="#" class="text-decoration-none mx-2" onclick="filterProducts('hockey')">Hockey</a>
+                        <a href="#" class="text-decoration-none mx-2" onclick="filterProducts('cricket')">Cricket</a>
+                        <a href="#" class="text-decoration-none mx-2" onclick="filterProducts('shuttle')">Shuttle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 product filter hiking">
+                    <div class="card product-card">
+                        <img src="/static/images/hikingboot1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Hiking Boots</h5>
+                            <p class="card-text">High-quality hiking boots for your adventures.</p>
+                            <p class="card-text price">₹3000</p>
+                            <div class="btn-group" role="group" aria-label="Add to Cart and Buy">
+                                <button type="button" class="btn btn-success">Add to Cart+</button>
+                                <button type="button" class="btn btn-danger">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 product filter hiking">
+                    <div class="card product-card">
+                        <span class="category-tag">Only few left</span>
+                        <img src="/static/images/hikingboot2.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Hiking Boots</h5>
+                            <p class="card-text">High-quality hiking boots for your adventures.</p>
+                            <p class="card-text price">₹4000</p>
+                            <div class="btn-group" role="group" aria-label="Add to Cart and Buy">
+                                <button type="button" class="btn btn-success">Add to Cart+</button>
+                                <button type="button" class="btn btn-danger">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 product filter camping">
+                    <div class="card product-card">
+                        <img src="/static/images/Camping-Tent1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Tent</h5>
+                            <p class="card-text">Spacious tent for a comfortable camping.</p>
+                            <p class="card-text price">₹15000</p>
+                            <div class="btn-group" role="group" aria-label="Add to Cart and Buy">
+                                <button type="button" class="btn btn-success">Add to Cart+</button>
+                                <button type="button" class="btn btn-danger">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product filter camping">
+                    <div class="card product-card">
+                        <img src="/static/images/camping-tent2.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Tent</h5>
+                            <p class="card-text">Spacious tent for a comfortable camping experience.</p>
+                            <p class="card-text price">₹30000</p>
+                            <div class="btn-group" role="group" aria-label="Add to Cart and Buy">
+                                <button type="button" class="btn btn-success">Add to Cart+</button>
+                                <button type="button" class="btn btn-danger">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product filter camping">
+                    <div class="card product-card">
+                        <img src="/static/images/camping-tent3.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Tent</h5>
+                            <p class="card-text">Spacious tent for a comfortable camping experience.</p>
+                            <p class="card-text price">₹25000</p>
+                            <div class="btn-group" role="group" aria-label="Add to Cart and Buy">
+                                <button type="button" class="btn btn-success">Add to Cart+</button>
+                                <button type="button" class="btn btn-danger">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 product filter waterSports">
+                    <div class="card product-card">
+                        <img src="/static/images/water-sports1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Water Boat</h5>
+                            <p class="card-text">Durable kayak for water sports enthusiasts sdvsfsf Hajh uahsuh.</p>
+                            <p class="card-text price">₹50000</p>
+                            <div class="btn-group" role="group" aria-label="Add to Cart and Buy">
+                                <button type="button" class="btn btn-success">Add to Cart+</button>
+                                <button type="button" class="btn btn-danger">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product filter waterSports">
+                    <div class="card product-card">
+                        <img src="/static/images/water-sports2.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Water Boat</h5>
+                            <p class="card-text">Durable kayak for water sports enthusiasts.</p>
+                            <p class="card-text price">₹55000</p>
+                            <div class="btn-group" role="group" aria-label="Add to Cart and Buy">
+                                <button type="button" class="btn btn-success">Add to Cart+</button>
+                                <button type="button" class="btn btn-danger">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product filter hockey">
+                    <div class="card product-card">
+                        <img src="/static/images/hockey1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Hockey</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur </p>
+                            <p class="card-text price">₹10000</p>
+                            <div class="btn-group" role="group" aria-label="Add to Cart and Buy">
+                                <button type="button" class="btn btn-success">Add to Cart+</button>
+                                <button type="button" class="btn btn-danger">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product filter hockey">
+                    <div class="card product-card">
+                        <img src="/static/images/hockey2.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Hockey</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur </p>
+                            <p class="card-text price">₹12000</p>
+                            <div class="btn-group" role="group" aria-label="Add to Cart and Buy">
+                                <button type="button" class="btn btn-success">Add to Cart+</button>
+                                <button type="button" class="btn btn-danger">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product filter cricket">
+                    <div class="card product-card">
+                        <img src="/static/images/cricket1.jpg" class="card-img-top" alt="Kayak">
+                        <div class="card-body">
+                            <h5 class="card-title">Cricket Bat</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur </p>
+                            <p class="card-text price">₹15000</p>
+                            <div class="btn-group" role="group" aria-label="Add to Cart and Buy">
+                                <button type="button" class="btn btn-success">Add to Cart+</button>
+                                <button type="button" class="btn btn-danger">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product filter cricket">
+                    <div class="card product-card">
+                        <img src="/static/images/cricket2.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Cricket Bat</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur </p>
+                            <p class="card-text price">₹35000</p>
+                            <div class="btn-group" role="group" aria-label="Add to Cart and Buy">
+                                <button type="button" class="btn btn-success">Add to Cart+</button>
+                                <button type="button" class="btn btn-danger">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 product filter cricket">
+                    <div class="card product-card">
+                        <img src="/static/images/cricket3.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Cricket gloves</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur </p>
+                            <p class="card-text price">₹20000</p>
+                            <div class="btn-group" role="group" aria-label="Add to Cart and Buy">
+                                <button type="button" class="btn btn-success">Add to Cart+</button>
+                                <button type="button" class="btn btn-danger">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 product filter cricket">
+                    <div class="card product-card">
+                        <img src="/static/images/cricket4.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Cricket Ball</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur </p>
+                            <p class="card-text price">₹5000</p>
+                            <div class="btn-group" role="group" aria-label="Add to Cart and Buy">
+                                <button type="button" class="btn btn-success">Add to Cart+</button>
+                                <button type="button" class="btn btn-danger">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product filter shuttle">
+                    <div class="card product-card">
+                        <img src="/static/images/shuttlebat1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Shuttle Combo</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur </p>
+                            <p class="card-text price">₹8000</p>
+                            <div class="btn-group" role="group" aria-label="Add to Cart and Buy">
+                                <button type="button" class="btn btn-success">Add to Cart+</button>
+                                <button type="button" class="btn btn-danger">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product filter shuttle">
+                    <div class="card product-card">
+                        <img src="/static/images/shuttle-bat2.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Shuttle Combo</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur </p>
+                            <p class="card-text price">₹9000</p>
+                            <div class="btn-group" role="group" aria-label="Add to Cart and Buy">
+                                <button type="button" class="btn btn-success">Add to Cart+</button>
+                                <button type="button" class="btn btn-danger">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product filter shuttle">
+                    <div class="card product-card">
+                        <img src="/static/images/shuttlebat-3.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Shuttle Bat Combo</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur </p>
+                            <p class="card-text price">₹10000</p>
+                            <div class="btn-group" role="group" aria-label="Add to Cart and Buy">
+                                <button type="button" class="btn btn-success">Add to Cart+</button>
+                                <button type="button" class="btn btn-danger">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer" data-aos="fade-up" data-aos-duration="1500">
+        <h1 class="text-center">ProPulse Sports</h1>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, accusantium.</p>
+        <div class="icons text-center">
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-skype"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="copyright text-center">
+            &copy; Copyright <strong>ProPulse Sports</strong> .All Rights Reserved
+        </div>
+
+    </footer>
+    <!-- footer -->
+
+    <script>
+
+        function filterProducts(category) {
+
+            $('.product').each(function () {
+                const productCategories = $(this).hasClass(category);
+
+                if (category === 'all' || productCategories) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        }
+    </script>
+
+
+
+
+
+
+</body>
+
+
+
+</html>

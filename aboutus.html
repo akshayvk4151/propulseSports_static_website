@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-...your-integrity-code-here..." crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Felipa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="/productstyle.css">
+    <link rel="stylesheet" href="/about.css">
+    <title>About Us</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparant fixed-top" id="navbar"
+        style="background-color: cadetblue;">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fs-4" href="#"
+                style="font-weight: 600; color: yellow; font-family: 'Felipa', cursive;">ProPulse
+                <span style="color: rgb(228, 17, 17); font-family: none;">Sports</span> </a>
+            <!-- Toggle Btn -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- side bar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <!-- Sidebar Header -->
+                <div class="offcanvas-header text-white border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ProPulse Sports</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                    <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/aboutus.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+
+
+                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                        <form class="d-flex ms-lg-auto mb-2 mb-lg-0">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                                style="border-color: #ddd; color: black;">
+                            <button class="btn btn-outline-light" type="submit">Search</button>
+                        </form>
+                        <div class="navicons">
+                            <a href=""><i class="bi bi-person" style="font-size: 1.8rem; color: white;"></i></a>
+                            <a href=""><i class="bi bi-cart" style="font-size: 1.8rem; color: white;"></i></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar End -->
+
+    <!-- about section -->
+    <div class="about animate-up" id="about">
+        <div class="container">
+            <div class="heading mt-5">About <span>Us</span></div>
+
+            <!-- Body section -->
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="/static/images/abouts1.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="head">Our History</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minima numquam porro consequuntur
+                        ipsum,
+                        nulla aliquam amet quam consequatur expedita.
+                        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minus dicta quia maxime!
+                        Suscipit rerum similique non perferendis maiores rem, cumque explicabo exercitationem deserunt
+                        illum
+                        in aperiam natus impedit recusandae?
+                        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem voluptates harum, quis
+                        excepturi voluptatum!
+
+                    </p>
+                    <button id="about-btn">Learn More.</button>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-6 order-md-2">
+                    <div class="card">
+                        <img src="/static/images/about2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h3 class="head">Our Mission</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minima numquam porro consequuntur
+                        ipsum,
+                        nulla aliquam amet quam consequatur expedita.
+                        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minus dicta quia maxime!
+                        Suscipit rerum similique non perferendis maiores rem, cumque explicabo exercitationem deserunt
+                        illum
+                        in aperiam natus impedit recusandae?
+                        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem voluptates harum, quis
+                        excepturi voluptatum!
+
+                    </p>
+                    <button id="about-btn">Learn More.</button>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="/static/images/about3.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="head">Our Values</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minima numquam porro consequuntur
+                        ipsum,
+                        nulla aliquam amet quam consequatur expedita.
+                        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minus dicta quia maxime!
+                        Suscipit rerum similique non perferendis maiores rem, cumque explicabo exercitationem deserunt
+                        illum
+                        in aperiam natus impedit recusandae?
+                        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem voluptates harum, quis
+                        excepturi voluptatum!<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem
+                        voluptates harum, quis
+                        excepturi voluptatum!<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem
+                        voluptates harum, quis
+                        excepturi voluptatum!
+
+                    </p>
+                    <button id="about-btn">Learn More.</button>
+                </div>
+            </div>
+
+            <!-- Team members -->
+
+            <div class="container py-5">
+                <div class="row text-center text-white">
+                    <div class="col-lg-8 mt-5 mx-auto">
+                        <h1 class="display-4 text-black" style="font-family: Florentia Font Family;">Our Team Members
+                        </h1>
+                        <p class="lead mb-0 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <p class="lead text-black">Snippet by ipsum dolor sit
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row text-center">
+
+                    <!-- Team item -->
+                    <div class="col-xl-3 col-sm-6 mb-5">
+                        <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrSiWXKyjokTl5r5zrUPwY1UBnsLlVelj-Ug&usqp=CAU"
+                                alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                            <h5 class="mb-0">Mariyam</h5><span class="small text-uppercase text-muted">CEO -
+                                Founder</span>
+                            <ul class="social mb-0 list-inline mt-3">
+                                <li class="list-inline-item"><a href="#" class="social-link"><i
+                                            class="bi bi-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item"><a href="#" class="social-link"><i
+                                            class="bi bi-twitter-x"></i></a></li>
+                                <li class="list-inline-item"><a href="#" class="social-link"><i
+                                            class="bi bi-instagram"></i></a>
+                                </li>
+                                <li class="list-inline-item"><a href="#" class="social-link"><i
+                                            class="bi bi-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div><!-- End -->
+
+                    <!-- Team item -->
+                    <div class="col-xl-3 col-sm-6 mb-5">
+                        <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                                src="https://bootstrapious.com/i/snippets/sn-team/teacher-2.jpg" alt="" width="100"
+                                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                            <h5 class="mb-0">Samuel</h5><span class="small text-uppercase text-muted">CO -
+                                Founder</span>
+                            <ul class="social mb-0 list-inline mt-3">
+                                <li class="list-inline-item"><a href="#" class="social-link"><i
+                                            class="bi bi-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item"><a href="#" class="social-link"><i
+                                            class="bi bi-twitter-x"></i></a></li>
+                                <li class="list-inline-item"><a href="#" class="social-link"><i
+                                            class="bi bi-instagram"></i></a>
+                                </li>
+                                <li class="list-inline-item"><a href="#" class="social-link"><i
+                                            class="bi bi-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div><!-- End -->
+
+                    <!-- Team item -->
+                    <div class="col-xl-3 col-sm-6 mb-5">
+                        <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIRYMT-G9iuOCsnC_A9vK0gFFYiCf5aQZi-w&usqp=CAU"
+                                alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                            <h5 class="mb-0">Tom Sunderland</h5><span class="small text-uppercase text-muted">General
+                                Manager</span>
+                            <ul class="social mb-0 list-inline mt-3">
+                                <li class="list-inline-item"><a href="#" class="social-link"><i
+                                            class="bi bi-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item"><a href="#" class="social-link"><i
+                                            class="bi bi-twitter-x"></i></a></li>
+                                <li class="list-inline-item"><a href="#" class="social-link"><i
+                                            class="bi bi-instagram"></i></a>
+                                </li>
+                                <li class="list-inline-item"><a href="#" class="social-link"><i
+                                            class="bi bi-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Team item -->
+                    <div class="col-xl-3 col-sm-6 mb-5">
+                        <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                                src="https://www.indiafirstlife.com/documents/311537/7757048/Naman+Gupta_website.jpg.png/e2d12b1f-4c63-d5d1-2fb6-196e0ad4ddca?t=1693564256106"
+                                alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                            <h5 class="mb-0">John Smith</h5><span class="small text-uppercase text-muted">Team
+                                Lead</span>
+                            <ul class="social mb-0 list-inline mt-3">
+                                <li class="list-inline-item"><a href="#" class="social-link"><i
+                                            class="bi bi-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item"><a href="#" class="social-link"><i
+                                            class="bi bi-twitter-x"></i></a></li>
+                                <li class="list-inline-item"><a href="#" class="social-link"><i
+                                            class="bi bi-instagram"></i></a>
+                                </li>
+                                <li class="list-inline-item"><a href="#" class="social-link"><i
+                                            class="bi bi-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- footer -->
+        <footer id="footer" data-aos="fade-up" data-aos-duration="1500">
+            <h1 class="text-center">ProPulse Sports</h1>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, accusantium.</p>
+            <div class="icons text-center">
+                <i class="bx bxl-twitter"></i>
+                <i class="bx bxl-facebook"></i>
+                <i class="bx bxl-google"></i>
+                <i class="bx bxl-skype"></i>
+                <i class="bx bxl-instagram"></i>
+            </div>
+            <div class="copyright text-center">
+                &copy; Copyright <strong>ProPulse Sports</strong> .All Rights Reserved
+            </div>
+
+        </footer>
+        <!-- footer -->
+
+    </div>
+
+
+
+    <!-- fadein effect -->
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        });
+
+        observer.observe(document.querySelector('.about'));
+    </script>
+</body>
+
+</html>
